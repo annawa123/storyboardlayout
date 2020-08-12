@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A43E55724E44B1C00090B3A /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A43E55624E44B1C00090B3A /* 1.mp3 */; };
 		790719D924E319D1009CB2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719D824E319D1009CB2EE /* AppDelegate.swift */; };
 		790719DB24E319D1009CB2EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719DA24E319D1009CB2EE /* SceneDelegate.swift */; };
 		790719DD24E319D1009CB2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719DC24E319D1009CB2EE /* ViewController.swift */; };
@@ -21,9 +22,12 @@
 		790719F824E31CF1009CB2EE /* breakActivityContinuedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719F724E31CF1009CB2EE /* breakActivityContinuedViewController.swift */; };
 		790719FA24E31D1D009CB2EE /* timer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719F924E31D1D009CB2EE /* timer2ViewController.swift */; };
 		790719FC24E31D4B009CB2EE /* endPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790719FB24E31D4B009CB2EE /* endPageViewController.swift */; };
+		8A7AE64F24E46BB100140230 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7AE64E24E46BB100140230 /* AVFoundation.framework */; };
+		8A7AE65324E4710A00140230 /* soundfifteenmin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8A7AE65224E4710A00140230 /* soundfifteenmin.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A43E55624E44B1C00090B3A /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		790719D524E319D1009CB2EE /* Finalproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finalproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790719D824E319D1009CB2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		790719DA24E319D1009CB2EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		790719F724E31CF1009CB2EE /* breakActivityContinuedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = breakActivityContinuedViewController.swift; sourceTree = "<group>"; };
 		790719F924E31D1D009CB2EE /* timer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer2ViewController.swift; sourceTree = "<group>"; };
 		790719FB24E31D4B009CB2EE /* endPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endPageViewController.swift; sourceTree = "<group>"; };
+		8A7AE64E24E46BB100140230 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8A7AE65224E4710A00140230 /* soundfifteenmin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = soundfifteenmin.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A7AE64F24E46BB100140230 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,7 @@
 			children = (
 				790719D724E319D1009CB2EE /* Finalproject */,
 				790719D624E319D1009CB2EE /* Products */,
+				8A7AE64D24E46BB100140230 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +85,13 @@
 				790719DC24E319D1009CB2EE /* ViewController.swift */,
 				790719DE24E319D1009CB2EE /* Main.storyboard */,
 				790719FB24E31D4B009CB2EE /* endPageViewController.swift */,
+				8A7AE65224E4710A00140230 /* soundfifteenmin.mp3 */,
 				790719F924E31D1D009CB2EE /* timer2ViewController.swift */,
 				790719F724E31CF1009CB2EE /* breakActivityContinuedViewController.swift */,
 				790719F524E31C4E009CB2EE /* breakActivity1ViewController.swift */,
 				790719F324E31BD9009CB2EE /* setBreak1ViewController.swift */,
 				790719F124E31B99009CB2EE /* timer1ViewController.swift */,
+				0A43E55624E44B1C00090B3A /* 1.mp3 */,
 				790719EF24E31B6A009CB2EE /* setTimeViewController.swift */,
 				790719E424E319D4009CB2EE /* Assets.xcassets */,
 				790719E624E319D4009CB2EE /* LaunchScreen.storyboard */,
@@ -89,6 +99,14 @@
 				790719E124E319D1009CB2EE /* Finalproject.xcdatamodeld */,
 			);
 			path = Finalproject;
+			sourceTree = "<group>";
+		};
+		8A7AE64D24E46BB100140230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A7AE64E24E46BB100140230 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				790719E824E319D4009CB2EE /* LaunchScreen.storyboard in Resources */,
+				0A43E55724E44B1C00090B3A /* 1.mp3 in Resources */,
+				8A7AE65324E4710A00140230 /* soundfifteenmin.mp3 in Resources */,
 				790719E524E319D4009CB2EE /* Assets.xcassets in Resources */,
 				790719E024E319D1009CB2EE /* Main.storyboard in Resources */,
 			);
