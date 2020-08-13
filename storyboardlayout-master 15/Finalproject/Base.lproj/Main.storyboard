@@ -381,25 +381,29 @@
             </objects>
             <point key="canvasLocation" x="2202.898550724638" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Set Time View Controller-->
         <scene sceneID="Inm-7p-INc">
             <objects>
-                <exit id="ePg-tT-jyF" userLabel="Exit" sceneMemberID="exit"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X69-mC-1sY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="w8Y-61-Fvn" sceneMemberID="viewController">
+                <viewController id="w8Y-61-Fvn" customClass="setTimeViewController" customModule="Finalproject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK7-Yz-gjj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3H-wJ-iev">
-                                <rect key="frame" x="285" y="682.5" width="46" height="50"/>
+                                <rect key="frame" x="291" y="658.5" width="46" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="gobackward" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickUndo:" destination="w8Y-61-Fvn" eventType="touchUpInside" id="4D2-sm-NUN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-Xu-Usr">
-                                <rect key="frame" x="237" y="681" width="46" height="52"/>
+                                <rect key="frame" x="237" y="656" width="46" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="square.and.arrow.down" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickSave:" destination="w8Y-61-Fvn" eventType="touchUpInside" id="L7L-1e-gk4"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sD6-sL-izb">
                                 <rect key="frame" x="40" y="741" width="341" height="30"/>
@@ -410,7 +414,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RrY-jx-gen">
-                                <rect key="frame" x="20" y="682" width="209" height="53"/>
+                                <rect key="frame" x="20" y="656" width="209" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ki1-KC-dZ8">
@@ -432,8 +436,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amv-2c-ujC">
+                                <rect key="frame" x="0.0" y="736.5" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="paintbrush" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickBrushSize:" destination="w8Y-61-Fvn" eventType="touchUpInside" id="tQB-81-Wj5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKq-Sx-lgE">
+                                <rect key="frame" x="0.0" y="774" width="36" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="rays" catalog="system"/>
+                                <connections>
+                                    <action selector="onClickOpacity:" destination="w8Y-61-Fvn" eventType="touchUpInside" id="3Jw-le-3ZQ"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84k-GV-39a">
-                                <rect key="frame" x="334" y="683" width="50" height="49"/>
+                                <rect key="frame" x="344" y="658" width="50" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <state key="normal" backgroundImage="clear" catalog="system">
@@ -441,6 +461,7 @@
                                 </state>
                                 <connections>
                                     <action selector="clearButtonTapped:" destination="ePg-tT-jyF" eventType="touchUpInside" id="oXA-e7-KUo"/>
+                                    <action selector="onClickClear:" destination="w8Y-61-Fvn" eventType="touchUpInside" id="bzK-B3-ElJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -448,7 +469,12 @@
                         <viewLayoutGuide key="safeArea" id="9bA-5p-pov"/>
                     </view>
                     <navigationItem key="navigationItem" id="70B-Se-GFo"/>
+                    <connections>
+                        <outlet property="collectionView" destination="RrY-jx-gen" id="Ewf-Ol-Rpz"/>
+                    </connections>
                 </viewController>
+                <exit id="ePg-tT-jyF" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X69-mC-1sY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2878.2608695652175" y="-538.39285714285711"/>
         </scene>
@@ -850,8 +876,10 @@
         <image name="download-1" width="200" height="200"/>
         <image name="gobackward" catalog="system" width="121" height="128"/>
         <image name="images" width="225" height="225"/>
+        <image name="paintbrush" catalog="system" width="128" height="128"/>
         <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
         <image name="play.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rays" catalog="system" width="128" height="122"/>
         <image name="rest-icon-22" width="626" height="626"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
     </resources>

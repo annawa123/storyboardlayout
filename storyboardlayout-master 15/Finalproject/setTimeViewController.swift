@@ -10,10 +10,34 @@ import UIKit
 
 class setTimeViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+        
+    @IBAction func onClickSave(_ sender: Any) {
+    }
+    
+    @IBAction func onClickUndo(_ sender: Any) {
+    }
+    
+    @IBAction func onClickClear(_ sender: Any) {
+    }
+    
+    @IBAction func onClickBrushSize(_ sender: Any) {
+    }
+    
+    @IBAction func onClickOpacity(_ sender: Any) {
+    }
+    
+    extension setTimeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+        func collectionView(_collectionView: UICollectionView, numberOfItemsInSelection section: Int) -> Int {
+            code
+            
+        
     }
     
 
